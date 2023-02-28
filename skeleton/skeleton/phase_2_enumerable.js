@@ -13,7 +13,7 @@ Array.prototype.myMap = function(callback) {
 
 // [1,2,3].myMap( ele => {
 //     return ele*2
-// }
+// })
 
 // [1,2,3].myMap( ele => (
 //     ele*2
@@ -26,8 +26,4 @@ Array.prototype.myReduce = function(callback, acc) {
         acc = callback(acc, ele)
     })
     return acc
-}
-
-String.prototype.substring = function() {
-    
 }
