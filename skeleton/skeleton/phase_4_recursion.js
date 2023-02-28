@@ -29,3 +29,11 @@ function fibonacci(n) {
     return a
 }
 
+function deepDup(arr) {
+    let a = []
+
+    arr.forEach(ele => {
+        !(ele instanceof Array) ? a.push(ele) : a.push(deepDup(ele)) 
+    })
+    return a
+}
