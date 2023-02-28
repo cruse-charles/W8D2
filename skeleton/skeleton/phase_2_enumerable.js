@@ -27,3 +27,7 @@ Array.prototype.myReduce = function(callback, acc) {
     })
     return acc
 }
+
+String.prototype.substring = function() {
+    
+}
