@@ -16,13 +16,10 @@ Array.prototype.bubbleSort = function() {
 
 String.prototype.substrings = function() {
     let a = []
-
     for(let i = 0; i < this.length; i++) {
-        for(let j = i+1; j<=this.length; j++) {
-            a.push(this.slice(i,j))
+        for(let j = i + 1; j<=this.length; j++) {
+            a.push(this.slice(i, j))
         }
-
     }
     return a
-
 }

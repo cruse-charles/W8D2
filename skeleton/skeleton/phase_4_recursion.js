@@ -1,13 +1,11 @@
 function range(start, end) {
-    
     if (start === end) return []
-    return [start].concat(range(start+1,end))
-
+    return [start].concat(range(start + 1, end))
 }
 
 function sumRec(arr) {
     if(arr.length === 0) return 0
-    return arr[0]+sumRec(arr.slice(1))
+    return arr[0] + sumRec(arr.slice(1))
 }
 
 function exponent(base, exp) {
@@ -19,7 +17,7 @@ function exponent(base, exp) {
 function fib(n) {
     if (n === 0) return 0
     if (n === 1) return 1
-    return fib(n-2) + fib(n-1)
+    return fib(n - 2) + fib(n - 1)
 }
 function fibonacci(n) {
     let a = []
@@ -31,8 +29,7 @@ function fibonacci(n) {
 
 function deepDup(arr) {
     let a = []
-
-    arr.forEach(ele => {
+    arr.forEach( ele => {
         !(ele instanceof Array) ? a.push(ele) : a.push(deepDup(ele)) 
     })
     return a
